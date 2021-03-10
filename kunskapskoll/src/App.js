@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './components/Form';
+import FormAndInput from './components/FormAndInput';
 import './App.css'
 
 
@@ -8,7 +8,14 @@ function App() {
   
   return (
     <div className="App">
-      <Form />      
+      <header>
+        <h1>BOOK YOUR TRIP</h1>
+
+      </header>
+      
+      <FormAndInput />
+      
+      
     </div>
   );
 }
