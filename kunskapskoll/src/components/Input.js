@@ -11,7 +11,7 @@ const Input = (props) => {
 
 
     return (
-            <form>
+            <form className="name-input">
               <label> 
                   First name
                 <input
