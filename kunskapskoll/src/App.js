@@ -22,6 +22,8 @@ function App() {
       <Dropdown 
           quantity={quantity}
           setQuantity={setQuantity}
+          gender={gender}
+          setGender={setGender}
       />
       <Input 
           firstname={inputFirstname} 
