@@ -1,22 +1,40 @@
-import React from 'react';
-import FormAndInput from './components/FormAndInput';
+import { useState } from 'react';
 import './App.css'
+import Input from './components/Input';
+import Checkbox from './components/Checkbox'
+import Dropdown from './components/Dropdown';
 
 
 
 function App() {
-  
-  return (
-    <div className="App">
-      <header>
-        <h1>BOOK YOUR TRIP</h1>
+  //
+  const [inputFirstname, setInputFirstname] = useState('')
+  const [inputLastname, setInputLastname] = useState('')
+  const [check, setCheck] = useState(false)
+  const [gender, setGender] = useState('')
+  const [quantity, setQuantity] = useState('')
 
-      </header>
+  return (
+    <section className="App">
+      <h1>BOOK YOUR TRIP</h1>
       
-      <FormAndInput />
       
+      <Dropdown 
+          quantity={quantity}
+          setQuantity={setQuantity}
+      />
+      <Input 
+          firstname={inputFirstname} 
+          setInputFirstname={setInputFirstname} 
+          lastname={inputLastname} 
+          setInputLastname={setInputLastname} 
+        />
+      <Checkbox 
+          check={check} 
+          setCheck={setCheck} 
+      />
       
-    </div>
+    </section>
   );
 }
 
