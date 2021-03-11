@@ -1,28 +1,28 @@
 const RadioButton = (props) => {
 
     const handleClass = (e) => {
-        props.setClassOption(e.target.value)
+        props.setClassOption(e.target.checked)
     }
 
     return ( 
         
             <form onChange={handleClass}>
-                <label>1st Class
+                1st Class
                     <input 
                         type="radio" 
                         value="1st Class"
-                         
+                        checked={props.ClassOption === "1st Class"} 
+                    
                     />
-                </label>
                 
-                <label>2nd Class
+                
+                2nd Class
                     <input 
                         type="radio" 
                         value="2nd Class"  
+                        checked={props.setClassOption === "2nd Class"}
                         
                     />
-                </label>
-                              
             </form>
 
     );

@@ -25,7 +25,7 @@ function App() {
       
       <RadioButton 
           classOptionDefault={classOption}
-          value={setClassOption}
+          setClassOption={setClassOption}
       />
       <Dropdown 
           quantity={quantity}

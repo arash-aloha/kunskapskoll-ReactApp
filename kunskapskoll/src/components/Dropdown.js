@@ -12,6 +12,7 @@ const Dropdown = (props) => {
 
     return (
         <label className="dropdown-form">
+            
             <select onChange={handleOption} 
                     value={props.quantity}
                     className="quantity">
@@ -22,6 +23,7 @@ const Dropdown = (props) => {
                 <option value='4'>4</option>
                 <option value='5'>4</option>
             </select>
+
             <select onChange={handleOption2}
                     value={props.gender}
                     className="gender-select">
