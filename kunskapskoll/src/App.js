@@ -5,10 +5,13 @@ import Checkbox from './components/Checkbox'
 import Dropdown from './components/Dropdown';
 import Button from './components/Button';
 import RadioButton from './components/RadioButton'
+import Destinations from './components/Destinations';
 
 
 function App() {
 
+  const [departure, setDeparture] = useState('')
+  const [destination, setDestination] = useState('')
   const [inputFirstname, setInputFirstname] = useState('')
   const [inputLastname, setInputLastname] = useState('')
   const [check, setCheck] = useState(false)
@@ -23,6 +26,13 @@ function App() {
     <section className="App">
       <h1>BOOK YOUR TRIP</h1>
       
+      <Destinations
+          destination={destination}
+          departure={departure}
+          setDeparture={setDeparture}
+          setDestination={setDestination}
+      />
+
       <RadioButton 
           classOptionDefault={classOption}
           setClassOption={setClassOption}

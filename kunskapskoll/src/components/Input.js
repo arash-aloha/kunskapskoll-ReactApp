@@ -12,24 +12,24 @@ const Input = (props) => {
 
     return (
             <form className="name-input">
-              <label> 
-                  First name
+
                 <input
                     type="text"
                     firstname='First name'
                     value={props.inputFirstname}
                     onChange={handleUserInput}
+                    placeholder="First name"
                 />
-               </label>
-              <label>
-                  Last name
+
+                  
                 <input
                     type="text"
                     lastname='Last name'
                     value={props.inputLastname}
                     onChange={handleUserInputL}
+                    placeholder="Last name"
                 />
-              </label>
+             
             </form>
           );
     }

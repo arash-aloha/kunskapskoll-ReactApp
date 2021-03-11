@@ -1,3 +1,5 @@
+
+
 const RadioButton = (props) => {
 
     const handleClass = (e) => {
@@ -11,7 +13,7 @@ const RadioButton = (props) => {
                     <input 
                         type="radio" 
                         value="1st Class"
-                        checked={props.ClassOption === "1st Class"} 
+                        checked={props.classOptionDefault === "1st Class"} 
                     
                     />
                 
@@ -20,7 +22,7 @@ const RadioButton = (props) => {
                     <input 
                         type="radio" 
                         value="2nd Class"  
-                        checked={props.setClassOption === "2nd Class"}
+                        checked={props.classOptionDefault === "2nd Class"}
                         
                     />
             </form>

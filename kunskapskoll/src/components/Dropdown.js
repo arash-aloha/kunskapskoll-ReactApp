@@ -11,12 +11,12 @@ const Dropdown = (props) => {
 
 
     return (
-        <label className="dropdown-form">
-            
+        <form className="dropdown-form">
+
             <select onChange={handleOption} 
                     value={props.quantity}
                     className="quantity">
-                <option value=''></option>
+                <option value=''>Passanger</option>
                 <option value='1'>1</option>
                 <option value='2'>2</option>
                 <option value='3'>3</option>
@@ -27,13 +27,13 @@ const Dropdown = (props) => {
             <select onChange={handleOption2}
                     value={props.gender}
                     className="gender-select">
-                <option value=''></option>
+                <option value=''>Gender</option>
                 <option value='Male'>Male</option>
                 <option value='Female'>Female</option>
                 <option value='Non-binary gender'>Non-binary gender</option>
             </select>
 
-        </label>
+        </form>
 
 
     );
